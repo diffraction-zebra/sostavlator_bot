@@ -1,0 +1,5 @@
+peewee
+pyrogram
+tgcrypto
+pydantic
+lucidity
