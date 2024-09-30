@@ -1,34 +1,32 @@
 # TASKIFY 
 
-```Taskify``` - это минималистичный телеграм-бот, который позволяет вам создавать расписание:
-таск-листы, задачи, а также общие списки на нескольких пользователей.
+```Taskify``` is a minimalistic telegram bot that allows you to create a schedule: task lists, tasks, as well as shared lists for several users.
 
-## Начало работы
+## Getting Started
 
-## `Запуск`
+## `Launch`
 
-Для запуска склонируйте себе проект и в корне репозитория введите следующие комманды
+To launch, clone the project and enter the following commands in the root of the repository
 
 ```bash
 docker build -t taskify .
 docker run --rm -v $(pwd)/data:/app/data taskify
 ```
 
-P.S. Проект настроен под запуск в докере. Для большинства операционных систем linux для
-его установки хватит команд
+P.S. The project is configured to run in Docker. For most Linux operating systems, the following commands will suffice for its installation
 
 ```bash
 curl -fsSL https://get.docker.com -o install-docker.sh
 sudo sh install-docker.sh
 ```
 
-## `Бот`
+## `Bot`
 
-Для начала работы введите в телеграм пользователя `@thtaskbot` команду
+To get started, enter the command `@thtaskbot` in the Telegram user
 ```
 /start
 ```
-Выводом будет:
+The output will be:
 ```
 Hello, User! I'm Taskify bot.
 Here you can create your own task lists and tasks.
@@ -36,11 +34,9 @@ Here you can create your own task lists and tasks.
 Here is your personal ID: ***********
 ```
 
-Так вы регистрируетесь в боте и получаете ваш id для дальнейшей коллаборации
-
-## Интерфейс
-
-Всякой раз при начале работы просто вводите комманду
+This is how you register in the bot and get your ID for further collaboration
+## Interface
+Every time you start working, just enter the command
 
 ```
 /menu
@@ -48,26 +44,18 @@ Here is your personal ID: ***********
 
 ## `Task-листы и задачи`
 
-Списки задачи имеют два вида - simple и note. Первые при выполнении задачи удаляют ее из списка,
-вторые - нет. Note списки хорошо подойдут для регулярных процессов - вроде продуктов, которые
-вы хотите купить.
+Task lists have two types - simple and note. The former removes the task from the list when you complete it, the latter does not. Note lists are good for regular processes - like products that you want to buy.
 
-Кнопка `task lists` переводит вас в меню с просмотром и созданием списков. Создание списков и
-задач имеет единую форму: ваше сообщение примет вид списка/задачи, где в `<>` вам нужно будет
-ввести необходимые данные. При соответствующих полях будут подсказки. Не беспокойтесь о том,
-чтобы сделать что-то не так: бот не примет неверно введенную задачу. Для создания просто
-нажмите на сообщение о создании: оно само подсветить, предлагая это сделать, как только вы
-введете задачу/список полностью.
+The `task lists` button takes you to a menu with viewing and creating lists. Creating lists and
+tasks has a single form: your message will take the form of a list/task, where in `<>` you will need to
+enter the necessary data. There will be hints for the corresponding fields. Do not worry about doing something wrong: the bot will not accept an incorrectly entered task. To create, simply
+click on the creation message: it will highlight itself, offering to do this as soon as you
+enter the task/list completely.
 
 ## `Collaborators`
 
-В списках есть возможность добавления коллабораторов: для этого нажмите на соответсвующую
-кнопку в списке и введите id того, с кем сотрудничаете. Этот человек не сможет изменить задачи,
-однако сможет их просматривать и отмечать выполненными.
+The lists have the ability to add collaborators: to do this, click on the corresponding button in the list and enter the ID of the person you are collaborating with. This person will not be able to change the tasks, but will be able to view them and mark them as completed.
 
 ## `О задачах`
-
-Команда `All tasks` выведет все задачи - из ваших списков и тех списков, где вы учавствуете в 
-роли коллаборатора. Задачи можно отмечать выполненными как в нем, так и в списках задач. При 
-нажатии на задачу откроется меню ее редактирования и возможность удаления - эти вещи может
-делать только владелец списка.
+The `All tasks` command will display all tasks - from your lists and those lists where you participate in the role of a collaborator. Tasks can be marked as completed both in it and in task lists. When
+clicking on a task, a menu for editing it and the ability to delete it will open - these things can only be done by the owner of the list.
