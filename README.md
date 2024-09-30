@@ -42,7 +42,7 @@ Every time you start working, just enter the command
 /menu
 ```
 
-## `Task-листы и задачи`
+## `Task-lists and tasks`
 
 Task lists have two types - simple and note. The former removes the task from the list when you complete it, the latter does not. Note lists are good for regular processes - like products that you want to buy.
 
@@ -56,6 +56,6 @@ enter the task/list completely.
 
 The lists have the ability to add collaborators: to do this, click on the corresponding button in the list and enter the ID of the person you are collaborating with. This person will not be able to change the tasks, but will be able to view them and mark them as completed.
 
-## `О задачах`
+## `About tasks`
 The `All tasks` command will display all tasks - from your lists and those lists where you participate in the role of a collaborator. Tasks can be marked as completed both in it and in task lists. When
 clicking on a task, a menu for editing it and the ability to delete it will open - these things can only be done by the owner of the list.
